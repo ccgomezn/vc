@@ -20,4 +20,5 @@
 
 > :Collapse label=Members
 > 
-> [NN](/docs/members/nn)
+> [Cristhian Camilo Gomez Neira](/docs/members/ccgomezn)
+> [Jeferson](/docs/members/jeferson)
