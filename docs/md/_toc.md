@@ -21,4 +21,4 @@
 > :Collapse label=Members
 > 
 > [Cristhian Camilo Gomez Neira](/docs/members/ccgomezn)
-> [Jeferson](/docs/members/jeferson)
+> [Jefferson Daniel Castro Aguilar](/docs/members/jedcastroag)
