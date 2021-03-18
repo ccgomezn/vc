@@ -9,17 +9,16 @@ function setup() {
 function draw() {
   image(img, 0, 0, 512, 512);
   loadPixels();
-  for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        let index = (x + y * width)*4;
-        let r = pixels[index+0];
-        let g = pixels[index+1];
-        let b = pixels[index+2];
-                
-        pixels[index+0] = 255-r;
-        pixels[index+1] = 255-g;
-        pixels[index+2] = 255-b;
-    }
+  let d = pixelDensity();
+  let fullImage = (width * d) * (height * d);
+  for(let i=0; i < fullImage; i++){
+    let r = pixels[i*4];
+    let g = pixels[i*4+1];
+    let b = pixels[i*4+2];
+
+    pixels[i*4] = 255-r;
+    pixels[i*4+1] = 255-g;
+    pixels[i*4+2] = 255-b;
   }
   updatePixels();
 }

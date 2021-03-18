@@ -89,19 +89,16 @@ function setup() {
 function draw() {
   image(img, 0, 0, 512, 512);
   loadPixels();
-  for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        let index = (x + y * width)*4;
-        let r = pixels[index+0];
-        let g = pixels[index+1];
-        let b = pixels[index+2];
-        
-        let gray = r *.299 + g *.587 + b *.0114;
-        
-        pixels[index+0] = gray;
-        pixels[index+1] = gray;
-        pixels[index+2] = gray;
-    }
+  let d = pixelDensity();
+  let fullImage = (width * d) * (height * d);
+  for(let i=0; i < fullImage; i++){
+    let r = pixels[i*4];
+    let g = pixels[i*4+1];
+    let b = pixels[i*4+2];
+
+    pixels[i*4] = 255-r;
+    pixels[i*4+1] = 255-g;
+    pixels[i*4+2] = 255-b;
   }
   updatePixels();
 }
@@ -110,7 +107,7 @@ function draw() {
 
 # Gray scale Image
 
-The process of gray scale conversion has as primary objective transform the channels of color of the image into only one channel. The mathematic behind this process is the following. Suppose that you have an image in normalized RGB (the values of each channel goes from 0 to 1), then using the NTSC conversion formula we can create only one color channel that has the following intensity intensity = 0.2989 * red + 0.5870 * green + 0.1140*blue, that intensity will determined the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
+The process of gray scale conversion has as primary objective transform the channels of color of the image into only one channel and extract the brightness of the image. The mathematics behind this process is the following. Suppose that you have an image in normalized RGB (the values of each channel goes from 0 to 1), then using the NTSC conversion formula we can create only one color channel that has the following intensity intensity = 0.2989 * red + 0.5870 * green + 0.1140*blue, that intensity will determined the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
 
 ## Image using P5 filter functionality
 
@@ -166,19 +163,18 @@ function setup() {
 function draw() {
   image(img, 0, 0, 512, 512);
   loadPixels();
-  for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        let index = (x + y * width)*4;
-        let r = pixels[index+0];
-        let g = pixels[index+1];
-        let b = pixels[index+2];
-        
-        let gray = r *.299 + g *.587 + b *.0114;
-        
-        pixels[index+0] = gray;
-        pixels[index+1] = gray;
-        pixels[index+2] = gray;
-    }
+  let d = pixelDensity();
+  let fullImage = (width * d) * (height * d);
+  for (let i = 0; i < fullImage; i++) {
+    let r = pixels[i*4];
+    let g = pixels[i*4+1];
+    let b = pixels[i*4+2];
+    
+    let gray = r *.299 + g *.587 + b *.0114;
+    
+    pixels[i*4] = gray;
+    pixels[i*4+1] = gray;
+    pixels[i*4+2] = gray;
   }
   updatePixels();
 }
