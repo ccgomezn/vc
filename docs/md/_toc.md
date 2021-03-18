@@ -18,7 +18,7 @@
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
 
-> :Collapse label=Members
+> :Collapse label=People
 > 
 > [Cristhian Camilo Gomez Neira](/docs/members/ccgomezn)
 > [Jefferson Daniel Castro Aguilar](/docs/members/jedcastroag)
