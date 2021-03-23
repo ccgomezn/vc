@@ -111,7 +111,7 @@ function draw() {
 
 ### Gray scale Image
 
-The process of gray scale conversion has as primary objective transform the channels of color of the image into only one channel and extract the brightness of the image. The mathematics behind this process is the following. Suppose that you have an image in normalized RGB (the values of each channel goes from 0 to 1), then using the NTSC conversion formula we can create only one color channel that has the following intensity intensity = 0.2989 * red + 0.5870 * green + 0.1140*blue, that intensity will determined the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
+The grayscale conversion process has as primary objective transform the channels of the color of the image into only one channel and extract the brightness of the picture. The mathematics behind this process is the following. Suppose that you have an image in RGB, then we can use the average of the channels as the value of intensity, or we can use the NTSC conversion formula, which is based on how our eyes react to each channel in which the intensity has the following formula, intensity = 0.2989 * red + 0.5870 * green + 0.1140*blue, that intensity will determine the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
 
 #### Image using P5 filter functionality
 
@@ -142,7 +142,7 @@ function draw() {
 
 ```
 
-#### Image using manual transformation
+#### Image using manual NTSC transformation
 
 > :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=512
 
@@ -183,5 +183,17 @@ function draw() {
   updatePixels();
 }
 ```
+
+#### Comparison between average gray scale and NTSC formula
+
+We will use the following image that has a big difference in illuminance to compare the average grayscale method and NTSC.
+
+> :P5 sketch=/docs/sketches/gray_scale_comparison_base.js, width=539, height=360
+
+We have the two processed images, on the upper side we have the one processed using NTSC and on the other side the one using the average:
+
+> :P5 sketch=/docs/sketches/gray_scale_ntsc.js, width=539, height=720
+
+We can see that the average processing takes many bright spots as dark zones in the flame and that NTSC shows the difference of brightness in a more accurate way, showing why it is better to use NTSC against average processing.
 
 > :ToCPrevNext

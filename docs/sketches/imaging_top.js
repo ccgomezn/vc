@@ -42,5 +42,4 @@ function draw() {
   image(img_or, 0, 0, 256, 256);
   image(img_gr, 256, 0, 256, 256);
   image(img_inv, 512, 0, 256, 256);
-
 }
