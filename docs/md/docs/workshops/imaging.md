@@ -92,14 +92,19 @@ And the p5 sketch that loads the image and video is the following:
 ```js | inverse_color_manual_imaging.js
 function preload() {
   img = loadImage('/vc/docs/sketches/lenna.png');
+  video = createVideo(['/vc/docs/sketches/fingers.mov', '/vc/docs/sketches/fingers.webm']);
+  video.hide();
 }
 
 function setup() {
-  createCanvas(512, 512);
+  createCanvas(512, 256);
+  video.loop();
 }
 
 function draw() {
-  image(img, 0, 0, 512, 512);
+  image(img, 0, 0, 256, 256);
+  
+  image(video, 256, 0, 256, 256);
   loadPixels();
   let d = pixelDensity();
   let fullImage = (width * d) * (height * d);
@@ -121,43 +126,47 @@ function draw() {
 
 The grayscale conversion process has as primary objective transform the channels of the color of the image into only one channel and extract the brightness of the picture. The mathematics behind this process is the following. Suppose that you have an image in RGB, then we can use the average of the channels as the value of intensity, or we can use the Luma conversion formula, which is based on how our eyes react to each channel in which the intensity has the following formula, intensity = 0.2126 * red + 0.7152 * green + 0.0.0722*blue, that intensity will determine the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
 
-#### Image using P5 filter functionality
+#### Image and video using P5 filter functionality
 
-> :P5 sketch=/docs/sketches/gray_color_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/gray_color_imaging.js, width=512, height=256
 
 The markdown of the above sketch looks like:
 
 ```md
-> :P5 sketch=/docs/sketches/gray_color_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/gray_color_imaging.js, width=512, height=256
 ```
 
-And the p5 sketch that loads the original image is the following:
+And the p5 sketch that loads the image and video is the following:
 
 
 ```js | gray_color_imaging.js
 function preload() {
   img = loadImage('/vc/docs/sketches/lenna.png');
+  video = createVideo(['/vc/docs/sketches/fingers.mov', '/vc/docs/sketches/fingers.webm']);
+  video.hide();
 }
 
 function setup() {
-  createCanvas(512, 512);
-  img.filter(GRAY);
+  createCanvas(512, 256);
+  video.loop();  
 }
 
 function draw() {
-  image(img, 0, 0, 512, 512);
+  image(img, 0, 0, 256, 256);
+  image(video, 256,0,256,256);
+  filter(GRAY);
 }
 
 ```
 
 #### Image using manual Luma transformation
 
-> :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=256
 
 The markdown of the above sketch looks like:
 
 ```md
-> :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=256
 ```
 
 And the p5 sketch that loads the original image is the following:
