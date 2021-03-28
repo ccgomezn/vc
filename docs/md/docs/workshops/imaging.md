@@ -54,36 +54,39 @@ The markdown of the above sketch looks like:
 > :P5 sketch=/docs/sketches/inverse_color_imaging.js, width=512, height=256
 ```
 
-And the p5 sketch that loads the original image is the following:
+And the p5 sketch that loads the image and video is the following:
 
 
 ```js | inverse_color_imaging.js
 function preload() {
   img = loadImage('/vc/docs/sketches/lenna.png');
+  video = createVideo(['/vc/docs/sketches/fingers.mov', '/vc/docs/sketches/fingers.webm']);
+  video.hide();
 }
 
 function setup() {
-  createCanvas(512, 512);
-  img.filter(INVERT);
+  createCanvas(512, 256);
+  video.loop();
 }
 
 function draw() {
-  image(img, 0, 0, 512, 512);
+  image(img, 0, 0, 256, 256);
+  image(video, 256, 0, 256, 256);
+  filter(INVERT);
 }
-
 ```
-#### Image using manual transformation
+#### Image and video using manual transformation
 
-> :P5 sketch=/docs/sketches/inverse_color_manual_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/inverse_color_manual_imaging.js, width=512, height=256
 
 
 The markdown of the above sketch looks like:
 
 ```md
-> :P5 sketch=/docs/sketches/inverse_color_manual_imaging.js, width=512, height=512
+> :P5 sketch=/docs/sketches/inverse_color_manual_imaging.js, width=512, height=256
 ```
 
-And the p5 sketch that loads the original image is the following:
+And the p5 sketch that loads the image and video is the following:
 
 
 ```js | inverse_color_manual_imaging.js
