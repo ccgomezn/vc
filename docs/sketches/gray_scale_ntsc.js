@@ -13,7 +13,7 @@ function setup() {
     let g = img.pixels[i*4+1];
     let b = img.pixels[i*4+2];
     
-    let gray = r *.299 + g *.587 + b *.0114;
+    let gray = r *0.2126 + g *0.7152 + b *0.0722;
     
     img.pixels[i*4] = gray;
     img.pixels[i*4+1] = gray;
