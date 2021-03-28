@@ -6,6 +6,7 @@ function preload() {
 
 function setup() {
   createCanvas(512, 256);
+  video.loop();
 }
 
 function draw() {
