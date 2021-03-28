@@ -2,7 +2,7 @@
 
 ## Image filters
 
-> :P5 sketch=/docs/sketches/imaging_top.js, width=768, height=256
+> :P5 sketch=/docs/sketches/imaging_top.js, width=768, height=512
 
 ### Original Image
 
@@ -111,7 +111,7 @@ function draw() {
 
 ### Gray scale Image
 
-The grayscale conversion process has as primary objective transform the channels of the color of the image into only one channel and extract the brightness of the picture. The mathematics behind this process is the following. Suppose that you have an image in RGB, then we can use the average of the channels as the value of intensity, or we can use the NTSC conversion formula, which is based on how our eyes react to each channel in which the intensity has the following formula, intensity = 0.2989 * red + 0.5870 * green + 0.1140*blue, that intensity will determine the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
+The grayscale conversion process has as primary objective transform the channels of the color of the image into only one channel and extract the brightness of the picture. The mathematics behind this process is the following. Suppose that you have an image in RGB, then we can use the average of the channels as the value of intensity, or we can use the Luma conversion formula, which is based on how our eyes react to each channel in which the intensity has the following formula, intensity = 0.2126 * red + 0.7152 * green + 0.0.0722*blue, that intensity will determine the intensity of luminance of each pixel. In p5 we can directly use the functionality filter, and apply GRAY.
 
 #### Image using P5 filter functionality
 
@@ -142,7 +142,7 @@ function draw() {
 
 ```
 
-#### Image using manual NTSC transformation
+#### Image using manual Luma transformation
 
 > :P5 sketch=/docs/sketches/gray_color_manual_imaging.js, width=512, height=512
 
@@ -174,7 +174,7 @@ function draw() {
     let g = pixels[i*4+1];
     let b = pixels[i*4+2];
     
-    let gray = r *.299 + g *.587 + b *.0114;
+    let gray = r *.216 + g *.7152 + b *.0.0722;
     
     pixels[i*4] = gray;
     pixels[i*4+1] = gray;
@@ -184,16 +184,19 @@ function draw() {
 }
 ```
 
-#### Comparison between average gray scale and NTSC formula
+#### Comparison between average gray scale and Luma formula
 
-We will use the following image that has a big difference in illuminance to compare the average grayscale method and NTSC.
+We will use the following image that has a big difference in illuminance to compare the average grayscale method and Luma.
 
 > :P5 sketch=/docs/sketches/gray_scale_comparison_base.js, width=539, height=360
 
-We have the two processed images, on the upper side we have the one processed using NTSC and on the other side the one using the average:
+We have the two processed images, on the upper side we have the one processed using Luma and on the other side the one using the average:
 
 > :P5 sketch=/docs/sketches/gray_scale_ntsc.js, width=539, height=720
 
-We can see that the average processing takes many bright spots as dark zones in the flame and that NTSC shows the difference of brightness in a more accurate way, showing why it is better to use NTSC against average processing.
+We can see that the average processing takes many bright spots as dark zones in the flame and that Luma shows the difference of brightness in a more accurate way, showing why it is better to use Luma against average processing.
+
+## Convolutional Filters
+
 
 > :ToCPrevNext
