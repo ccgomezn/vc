@@ -1,8 +1,11 @@
 [Home](/)
 
 > :Collapse label=Workshops
-> 
-> [Imaging & Video](/docs/workshops/imaging)
+> >
+> > :Collapse label=Image & Video
+> >
+> > [Image and Video filters](/docs/workshops/imaging)
+>
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
 > [Computer Graphics](/docs/workshops/cg)
