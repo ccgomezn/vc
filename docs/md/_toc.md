@@ -4,7 +4,7 @@
 > >
 > > :Collapse label=Image & Video
 > >
-> > [Image and Video filters](/docs/workshops/imaging)
+> > [Image and Video filters](/docs/workshops/imaging/image_and_video)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
