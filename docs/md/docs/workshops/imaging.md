@@ -220,11 +220,11 @@ We can see that the average processing takes many bright spots as dark zones in 
 
 Now you can test the inverse and gray scale filters with your own camera.
 
-### Inverse filter with your own image
+### Inverse filter with your own camera
 
 > :P5 sketch=/docs/sketches/video_inverse.js, width=320, height=240
 
-### Gray scale filter with your own image
+### Gray scale filter with your own camera
 
 > :P5 sketch=/docs/sketches/video_gray.js, width=320, height=240
 

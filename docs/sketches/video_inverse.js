@@ -1,14 +1,24 @@
 let capture;
+let button;
 
 function setup() {
   createCanvas(320, 240);
-  capture = createCapture(VIDEO);
-  capture.size(320, 240);
-  capture.hide();
+  button = createButton('Start!');
 }
 
 function draw() {
-  background(255);
-  image(capture, 0, 0, 320, 240);
-  filter(INVERT);
+  if (capture) {
+    image(capture, 0, 0, 320, 240);
+    button.hide();
+    filter(INVERT);
+  } else {
+    button.position(150, 220);
+    button.mousePressed(startCapture); 
+  }
+}
+
+function startCapture() {
+  capture = createCapture(VIDEO);
+  capture.size(320, 240);
+  capture.hide();
 }
