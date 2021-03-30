@@ -1,4 +1,8 @@
-let w = [[1, 0, -1], [0, 0, 0], [-1, 0, 1]];
+let w = [[1.0/256, 4.0/256, 6.0/256, 4.0/256, 1.0/256], 
+[4.0/256, 16.0/256, 24.0/256, 16.0/256, 4.0/256], 
+[6.0/256, 24.0/256, 36.0/256, 24.0/256, 6.0/256],
+[4.0/256, 16.0/256, 24.0/256, 16.0/256, 4.0/256], 
+[1.0/256, 4.0/256, 6.0/256, 4.0/256, 1.0/256]];
 let img;
 let copy;
 
@@ -43,7 +47,7 @@ function draw() {
 
   for (let y = 0; y < img.height*d; y++) {
     for (let x = 0; x < img.width*d; x++) {
-      let result = convolution(copy, x, y, w, 3, img.width*d, img.height*d, d);
+      let result = convolution(copy, x, y, w, 5, img.width*d, img.height*d, d);
       let index = (x + y * img.width*d) * 4;
       img.pixels[index + 0] = result[0];
       img.pixels[index + 1] = result[1];
