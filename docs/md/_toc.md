@@ -5,7 +5,13 @@
 > > :Collapse label=Image & Video
 > >
 > > [Image and Video filters](/docs/workshops/imaging/image_and_video)
-> > [Matricial Convolution](/docs/workshops/imaging/convolution)
+> > > :Collapse label=Kernel (Image processing)
+> > >
+> > > [Kernel (Image processing)](/docs/workshops/imaging/convolution)
+> > > [Edge detection](/docs/workshops/imaging/edge_detection)
+> > > [Sharpen](/docs/workshops/imaging/sharpen)
+> > > [Blur](/docs/workshops/imaging/blur)
+> > > [Unsharp Masking](/docs/workshops/imaging/unsharp)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)

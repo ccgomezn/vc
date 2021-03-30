@@ -3,7 +3,7 @@ let img;
 let copy;
 
 function preload() {
-  copy = loadImage('/vc/docs/sketches/lenna.png');
+  copy = loadImage('/vc/docs/sketches/Vd-Orig.png');
 }
 
 function setup() {
