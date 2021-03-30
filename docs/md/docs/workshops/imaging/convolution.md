@@ -47,6 +47,9 @@ But we have a big problem if we want to calculate the value of the position (1,1
 
 This filters has the purpose of detect edges on the images, and are widely used on machine learning applications, because they help to extract important features of the images.
 
+
+#### First edge detection matrix
+
 > :Formula align=center
 >
 > w = \begin{pmatrix}
@@ -205,3 +208,35 @@ function draw() {
 ```
 
 On the code we load the video and create a copy of the actual frame each time that the draw function is called, then with that copy as ground of truth we alter the current frame of the video with the convolution of the copy and the filter.
+
+
+#### Second edge detection matrix
+
+
+> :Formula align=center
+>
+> w = \begin{pmatrix}
+> 0 & -1 & 0 `\\`
+> -1 & 4 & -1  `\\` 
+> 0 & -1 & 0 
+> \end{pmatrix}
+
+> :P5 sketch=/docs/sketches/second_convolution.js, width=256, height=256
+
+> :P5 sketch=/docs/sketches/second_convolution_video.js, width=256, height=256
+
+
+#### Third edge detection matrix
+
+
+> :Formula align=center
+>
+> w = \begin{pmatrix}
+> -1 & -1 & -1 `\\`
+> -1 & 8 & -1  `\\` 
+> -1 & -1 & -1 
+> \end{pmatrix}
+
+> :P5 sketch=/docs/sketches/third_convolution.js, width=256, height=256
+
+> :P5 sketch=/docs/sketches/third_convolution_video.js, width=256, height=256
