@@ -12,6 +12,7 @@
 > > > [Sharpen](/docs/workshops/imaging/sharpen)
 > > > [Blur](/docs/workshops/imaging/blur)
 > > > [Unsharp Masking](/docs/workshops/imaging/unsharp)
+> > > [Your own filters](/docs/workshops/imaging/own_filters)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
