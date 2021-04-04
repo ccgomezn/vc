@@ -5,6 +5,7 @@
 > > :Collapse label=Image & Video
 > >
 > > [Image and Video filters](/docs/workshops/imaging/image_and_video)
+> > [Image Photographic-Mosaic](/docs/workshops/imaging/photo_mosaic)
 > > > :Collapse label=Kernel (Image processing)
 > > >
 > > > [Kernel (Image processing)](/docs/workshops/imaging/convolution)
@@ -33,3 +34,4 @@
 > 
 > [Cristhian Camilo Gomez Neira](/docs/members/ccgomezn)
 > [Jefferson Daniel Castro Aguilar](/docs/members/jedcastroag)
+> [Kevin Steven Liberato Leuro](/docs/members/ksliberatol)
