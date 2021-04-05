@@ -9,12 +9,11 @@ for example:
 if we have an image that is 512x512 we'll have to use 262144 images, but in this case the images will be very small and could not be appreciated without a good resolution so...
 
 First we have to resize the image that we want to convert into, in order to appreciate the little images that we want to put in
-like a resolution of 50x50 
-
-> :P5 sketch=/docs/sketches/mosaic2.js, width=50, height=50
 
 then with an image collection we take the average brightness of each one and clasiffy them into 256 brightness values,
-we replace each pixel of our 50x50 image with an image that be equals with the brightness of this pixel and repeat at each pixel 
+we replace each pixel of our image with an image that be equals with the brightness of this pixel and repeat at each pixel 
+
+finally the full image in mosaic
 
 > :P5 sketch=/docs/sketches/mosaic.js, width=512, height=512
 
