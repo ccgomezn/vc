@@ -6,6 +6,7 @@
 > >
 > > [Image and Video filters](/docs/workshops/imaging/image_and_video)
 > > [Image Photographic-Mosaic](/docs/workshops/imaging/photo_mosaic)
+> > [Ascii art](/docs/workshops/imaging/ascii_art)
 > > > :Collapse label=Kernel (Image processing)
 > > >
 > > > [Kernel (Image processing)](/docs/workshops/imaging/convolution)
