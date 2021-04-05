@@ -29,4 +29,9 @@ Which is the same as the previous ones, but in 3D.
 
 To test these stereograms you must first cross your eyes. When a third image appears in the middle, that is, when the other two images merge, do your best to focus your vision on the new image.
 
+### References
+
+* [Autostereogram] (https://en.wikipedia.org/wiki/Autostereogram)
+* [Estereogramas] (https://www.bioguia.com/entretenimiento/mira-estos-estereogramas-como-funcionan-y-por-que-no-todos-podemos-verlos_29287896.html)
+
 > :ToCPrevNext

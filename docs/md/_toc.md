@@ -15,6 +15,8 @@
 > > > [Blur](/docs/workshops/imaging/blur)
 > > > [Unsharp Masking](/docs/workshops/imaging/unsharp)
 > > > [Your own filters](/docs/workshops/imaging/own_filters)
+> >
+> > [References](/docs/workshops/imaging/references)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
