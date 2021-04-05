@@ -13,6 +13,8 @@
 > > > [Blur](/docs/workshops/imaging/blur)
 > > > [Unsharp Masking](/docs/workshops/imaging/unsharp)
 > > > [Your own filters](/docs/workshops/imaging/own_filters)
+> > >
+> > [Ascii Art](/docs/workshops/imaging/ascii_art)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
