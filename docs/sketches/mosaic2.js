@@ -1,14 +1,14 @@
 let imaging;
 
 function preload() {
-  img_or = loadImage('/vc/docs/sketches/lenna.png');
+  img_or = loadImage('/vc/docs/sketches/lenna50x50.png');
 }
 
 function setup() {
-  createCanvas(50, 50);
+  createCanvas(512, 512);
   
 }
 
 function draw() {
-  image(img_or, 0, 0, 50, 50);
+  image(img_or, 0, 0, 512, 512);
 }
