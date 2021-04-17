@@ -32,6 +32,7 @@
 > [3D](/docs/snippets/3d)
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
+> [Formulae](/docs/snippets/formulae)
 
 > :Collapse label=People
 > 
