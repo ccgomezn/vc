@@ -2,8 +2,9 @@
 
 > :Collapse label=Workshops
 > >
-> > :Collapse label=Image & Video
+> > :Collapse label=Software Image & Video Processing
 > >
+> > [Problem Statement and Background](/docs/workshops/imaging/problem_statement)
 > > [Image and Video filters](/docs/workshops/imaging/image_and_video)
 > > [Image Photographic-Mosaic](/docs/workshops/imaging/photo_mosaic)
 > > [Ascii art](/docs/workshops/imaging/ascii_art)
@@ -16,7 +17,7 @@
 > > > [Unsharp Masking](/docs/workshops/imaging/unsharp)
 > > > [Your own filters](/docs/workshops/imaging/own_filters)
 > >
-> > [References](/docs/workshops/imaging/references)
+> > [Conclusions and References](/docs/workshops/imaging/references)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
