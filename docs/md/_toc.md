@@ -20,7 +20,6 @@
 > > [Conclusions and References](/docs/workshops/imaging/references)
 >
 > [Rendering](/docs/workshops/rendering)
-> [Algovis](/docs/workshops/algovis)
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
 
