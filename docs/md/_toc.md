@@ -19,7 +19,27 @@
 > >
 > > [Conclusions and References](/docs/workshops/imaging/references)
 >
-> [Rendering](/docs/workshops/rendering)
+> > :Collapse label=Hardware Image & Video Processing
+> >
+> > [Problem Statement and Background](/docs/workshops/hardware_image_video/problem_statement)
+> > [Image and Video filters](/docs/workshops/hardware_image_video/image_and_video)
+> > [Ascii art](/docs/workshops/hardware_image_video/ascii_art)
+> > > :Collapse label=Kernel (Image processing)
+> > >
+> > > [Kernel (Image processing)](/docs/workshops/hardware_image_video/convolution)
+> > > [Edge detection](/docs/workshops/hardware_image_video/edge_detection)
+> > > [Sharpen](/docs/workshops/hardware_image_video/sharpen)
+> > > [Blur](/docs/workshops/hardware_image_video/blur)
+> > > [Unsharp Masking](/docs/workshops/hardware_image_video/unsharp)
+> > > [Your own filters](/docs/workshops/hardware_image_video/own_filters)
+> >
+> > [Conclusions and References](/docs/workshops/hardware_image_video/references)
+>
+> > :Collapse label=Rendering 
+> >
+> > [Problem Statement and Background](/docs/workshops/rendering/rendering)
+> > [Radiosity Algorithm](/docs/workshops/rendering/radiosity)
+>
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
 
