@@ -36,4 +36,18 @@ These patches are just the first part of the subdivision, patches can be subdivi
 
 ### Calculation of form factors
 
-Two patches 
+Two patches are related in the way that "figure x" shows, the surfaces i and j have two values associated with them, the illumination and the radiative energy. As shown in the general radiosity equation we need to calculate the interaction of energy from every surface to every other surface, which can be calculated by the "form factor" [F_{ij}](:Formula).
+
+
+> :Formula align=center
+>
+> F_{ij} = \frac{1}{A_i}\int{A_i}\int{A_j}\frac{cos(\theta_i)cos(\theta_j)}{\pi r^2}dA_jdA_i
+
+Where [A_i](:Formula) is the area of the surface i, [A_j](:Formula) is the area of the surface j, [\theta_i](:Formula) is the angle from [N_i](:Formula) (surface normal of i) to surface j,  [\theta_j](:Formula) is the angle from [N_j](:Formula) (surface normal of j) to surface i, [dA_i](:Formula) is the differential area of surface i, and [dA_j](:Formula) is the differential area of surface j (calculated dividing the transmitting path area by the receiving path area). These integrals can be fully calculated using numerical integration monte carlo methods or the Hemi-Space projection method.
+
+
+## Distribution Functions
+
+We have talked a lot about the energy emitted and reflected by some patches, but how those values are calculated ? They are modeled by the Bidirectional Reflectance Distribution Function (BRDF) and the Bidirectional Surface Scattering Distribution Function (BSSRDF).
+
+### Bidirectional Reflectance Distribution Function
