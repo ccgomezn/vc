@@ -1,5 +1,7 @@
 # Radiosity Algorithm
 
+This section is based on the papers "Radiosity for Computer Graphics" of Brennan J. Rusnell and "The Radiosity Algorithm: Basic Implementations" of Bruce M. Arnold.  
+
 The concept of radiosity was first used in the area of heat transfer to represent how energy radiates out from all surfaces, to greater or lesser degree; currently, it is used in the underdevelopment area of computer graphics to study how light is transferred through particular objects and surfaces. This concept was introduced in the paper "Modeling the Interaction of Light Between Diffuse Surfaces" of Goral et al, in 1984 in order to simulate light transference from diffuse surfaces.
 
 Radiosity algorithm has evolved over the years and now is considered one of the most realistic global illumination models. Radiosity is particularly suited to diffuse environments, and the algorithm is based in object space. This means that the colors of objects are calculated before they are projected onto the screen thus, once the initial calculations have been made, they can be rendered from any point of view using fast hardware rendering techniques.
@@ -51,3 +53,24 @@ Where [A_i](:Formula) is the area of the surface i, [A_j](:Formula) is the area 
 We have talked a lot about the energy emitted and reflected by some patches, but how those values are calculated ? They are modeled by the Bidirectional Reflectance Distribution Function (BRDF) and the Bidirectional Surface Scattering Distribution Function (BSSRDF).
 
 ### Bidirectional Reflectance Distribution Function
+
+For an incident light coming from direction [k_i](:Formula) scattered in a small solid angle near the outgoing direction [k_o](:Formula). Now suppose that there is a device on the direction [k_o](:Formula) with the objective of detect which amount of light is scattered on the directional pair [(k_i,k_o)](:Formula), with the assumption that the reflection function is independent from the strength of the light source.
+
+Then if we place that radiance meter at the point on the surface being measure, we can define the reflectance as the following ratio:
+
+> :Formula align=center
+>
+> p = \frac{L_S}{H}
+
+where this fraction [p](:Formula) will vary with the directions [(k_i,k_o)](:Formula), [H](:Formula) is the irradiance for light position [k_i](:Formula), and [L_S](:Formula) is the surface radiance measured in direction [k_o](:Formula). If we take that measurement [p(k_i,k_o)](:Formula) for al direction pairs, we end up with the BRDF function and it characterizes the directional properties of how a surface reflects light.
+
+
+### Bidirectional Surface Scattering Reflectance Distribution Function
+
+On many situations light does not necessarily reflects when it hits a surface, it may scatter in the new medium, or be completely absorbed. The BSSRDF models the scattering of the light in a medium, and can describe light transport between any two rays that hit a surface.
+
+In general, the BSSRDF is an eight-dimensional function, expressing what fraction of light energy entering the object at a location [x_i](:Formula) from a direction [w_i](:Formula) leaves the object at a second location [x_o](:Formula) into direction [w_o](:Formula), and it has the advantage of creating smother and high quality scenes, using a complex integrate function that has to be solved by numerical integration or Monte Carlo methods.
+
+
+## Implementation
+
