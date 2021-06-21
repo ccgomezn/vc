@@ -296,5 +296,12 @@ In order to apply the gray scale RGB on an image or video using shaders we apply
 > > }
 > > ```
 
+## Try it with your own camera
+
+Now you can try these filters with your own camera.
+
+
+> :P5 sketch=/docs/sketches/imaging_own_hardware.js, width=770, height=480
+
 
 > :ToCPrevNext
