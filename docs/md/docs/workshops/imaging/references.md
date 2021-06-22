@@ -14,7 +14,7 @@
 * Machine Learning is an important research area now; that's why it will be good to explore how to connect p5.js with deep neural networks in order to process images and videos using this technology.
 * ASCII art and photomosaics could be extended and developed in a more significant way in order to create new forms of art and impulse areas of marketing and digital arts.
 
-xº
+
 ## References
 * [Kernel Processing](https://en.wikipedia.org/wiki/Kernel_(image_processing))
 * [Image Kernel](https://setosa.io/ev/image-kernels/)
