@@ -70,7 +70,3 @@ where this fraction [p](:Formula) will vary with the directions [(k_i,k_o)](:For
 On many situations light does not necessarily reflects when it hits a surface, it may scatter in the new medium, or be completely absorbed. The BSSRDF models the scattering of the light in a medium, and can describe light transport between any two rays that hit a surface.
 
 In general, the BSSRDF is an eight-dimensional function, expressing what fraction of light energy entering the object at a location [x_i](:Formula) from a direction [w_i](:Formula) leaves the object at a second location [x_o](:Formula) into direction [w_o](:Formula), and it has the advantage of creating smother and high quality scenes, using a complex integrate function that has to be solved by numerical integration or Monte Carlo methods.
-
-
-## Implementation
-
