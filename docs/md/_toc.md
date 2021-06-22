@@ -31,7 +31,6 @@
 > > > [Sharpen](/docs/workshops/hardware_image_video/sharpen)
 > > > [Blur](/docs/workshops/hardware_image_video/blur)
 > > > [Unsharp Masking](/docs/workshops/hardware_image_video/unsharp)
-> > > [Your own filters](/docs/workshops/hardware_image_video/own_filters)
 > >
 > > [Conclusions and References](/docs/workshops/hardware_image_video/references)
 >
