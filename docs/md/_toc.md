@@ -38,6 +38,7 @@
 > >
 > > [Problem Statement and Background](/docs/workshops/rendering/rendering)
 > > [Radiosity Algorithm](/docs/workshops/rendering/radiosity)
+> > [Barycentric Algorithm](/docs/workshops/rendering/barycentric)
 >
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
