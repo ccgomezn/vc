@@ -14,7 +14,7 @@ function setup() {
   createCanvas(768, 393, WEBGL);
   shaderTexture = createGraphics(393, 393, WEBGL);
   shaderTexture.noStroke();
-  kernel = [1/16, 2/16, 1/1, 2/16, 4/16,2/16, 1/16, 2/16, 1/16];
+  kernel = [1/16, 2/16, 1/16, 2/16, 4/16,2/16, 1/16, 2/16, 1/16];
   size = 3;
   for (let i = 0; i < size; i++) {
     for (let j = 0; j < size; j++) {
