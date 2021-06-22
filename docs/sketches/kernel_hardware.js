@@ -174,7 +174,7 @@ function convMatrix() {
       inputs.push(aux)
     }
   }
-  let button3 = createButton('start video');
+  let button3 = createButton('Use kernel');
   button3.style("display","inline-block");
   button3.style("padding","0.35em 1.2em");
   button3.style("border","0.1em solid #FFFFFF");
