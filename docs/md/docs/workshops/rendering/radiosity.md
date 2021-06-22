@@ -38,8 +38,12 @@ These patches are just the first part of the subdivision, patches can be subdivi
 
 ### Calculation of form factors
 
-Two patches are related in the way that "figure x" shows, the surfaces i and j have two values associated with them, the illumination and the radiative energy. As shown in the general radiosity equation we need to calculate the interaction of energy from every surface to every other surface, which can be calculated by the "form factor" [F_{ij}](:Formula).
+Two patches are related in the way that figure 1 shows, the surfaces i and j have two values associated with them, the illumination and the radiative energy. As shown in the general radiosity equation we need to calculate the interaction of energy from every surface to every other surface, which can be calculated by the "form factor" [F_{ij}](:Formula).
 
+
+> :P5 sketch=/docs/sketches/radiosityRelation.js, width=300, height=200
+
+(Figure 1 Relation within surfaces, Radiosity for Computer Graphics, Brennan J. Rusnell, 2007)
 
 > :Formula align=center
 >
@@ -70,3 +74,11 @@ where this fraction [p](:Formula) will vary with the directions [(k_i,k_o)](:For
 On many situations light does not necessarily reflects when it hits a surface, it may scatter in the new medium, or be completely absorbed. The BSSRDF models the scattering of the light in a medium, and can describe light transport between any two rays that hit a surface.
 
 In general, the BSSRDF is an eight-dimensional function, expressing what fraction of light energy entering the object at a location [x_i](:Formula) from a direction [w_i](:Formula) leaves the object at a second location [x_o](:Formula) into direction [w_o](:Formula), and it has the advantage of creating smother and high quality scenes, using a complex integrate function that has to be solved by numerical integration or Monte Carlo methods.
+
+## Results of the radiosity algorithm
+
+The cornell box is a scenario that is considered as the "Hello World" of radiosity engineers and figure 2 shows the result of the implementation of Brennan J. Rusnell on that scenario, showing the good results that can be achieved using this algorithm.
+
+> :P5 sketch=/docs/sketches/cornell.js, width=300, height=400
+
+(Figure 2 The Cornell box with radiosity algorithm, Radiosity for Computer Graphics, Brennan J. Rusnell, 2007)
