@@ -56,6 +56,6 @@
 
 > :Collapse label=People
 > 
-> [Cristhian Camilo Gomez Neira](/docs/members/ccgomezn)
-> [Jefferson Daniel Castro Aguilar](/docs/members/jedcastroag)
-> [Kevin Steven Liberato Leuro](/docs/members/ksliberatol)
+> [Cristhian Camilo Gomez Neira](/docs/team/ccgomezn)
+> [Jefferson Daniel Castro Aguilar](/docs/team/jedcastroag)
+> [Kevin Steven Liberato Leuro](/docs/team/ksliberatol)
