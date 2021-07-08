@@ -24,6 +24,7 @@
 > > [Problem Statement and Background](/docs/workshops/hardware_image_video/problem_statement)
 > > [Image and Video filters](/docs/workshops/hardware_image_video/image_and_video)
 > > [Ascii art](/docs/workshops/hardware_image_video/ascii_art)
+> > [Photo Mosaic](/docs/workshops/hardware_image_video/mosaic)
 > > > :Collapse label=Kernel (Image processing)
 > > >
 > > > [Kernel (Image processing)](/docs/workshops/hardware_image_video/convolution)
