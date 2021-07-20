@@ -40,6 +40,7 @@
 > > [Problem Statement and Background](/docs/workshops/rendering/rendering)
 > > [Radiosity Algorithm](/docs/workshops/rendering/radiosity)
 > > [Rasterization using Barycentric coordinates](/docs/workshops/rendering/barycentric)
+> > [Conclusions and References](/docs/workshops/rendering/references)
 >
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)

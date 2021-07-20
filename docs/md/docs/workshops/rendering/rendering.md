@@ -17,4 +17,11 @@ Escoger al menos una de las dos siguientes actividades:
 * Antes de las 24h del ~~4/4/21~~.
 * Exposiciones en las clase(s) subsiguiente(s). Tiempo: 7m (5m presentación del reporte + 2m preguntas).
 
+## Background
+
+
+Rendering is the process of generating images from a 2D or 3D model using a computer program, the resulting image will be the render. There are two different categories of rendering; real time rendering and pre rendering; real time rendering is a technique used commonly in interactive graphics and gaming, where images must be created without any kind of delay using dedicated graphic hardware.  Pre rendering is the technique used in environments where speed is not important, and the image calculations are performed using central units rather than dedicated hardware.
+
+In the following report you will see the theory behind the rendering radiosity algorithm and a basic implementation of how barycentric coordinates are used for rasterization methods.
+
 > :ToCPrevNext
