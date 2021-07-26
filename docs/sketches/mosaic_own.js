@@ -7,7 +7,7 @@ let allImages = [];
 let brightImages = [];
 let capture;
 let smaller;
-
+let button
 function transform(index) {
   let val = "";
   index = str(index);
@@ -107,7 +107,6 @@ function draw() {
     button.position(300, 440);
     button.mousePressed(startCapture); 
   }
-  noLoop();
 }
 
 
