@@ -303,5 +303,8 @@ Now you can try these filters with your own camera.
 
 > :P5 sketch=/docs/sketches/imaging_own_hardware.js, width=770, height=480
 
+## Comparison with Software implementation
+
+When we measure the framerate of both implementations using the same images as the base dataset we found an improvement 196% in the frameRate, on the software implementation the value of the frameRate was around 8.23 frames per second, while in the hardware implementation we have 24.39 frames per second on average.
 
 > :ToCPrevNext
