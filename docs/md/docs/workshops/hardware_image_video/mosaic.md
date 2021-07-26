@@ -210,6 +210,6 @@ Photo mosaic is the technique of creating a picture or video with a dataset of s
 
 ## Comparison with Software implementation
 
-When we measure the framerate of both implementations using the same images as the base dataset we found an improvement 365% in the frameRate, on the software implementation the value of the frameRate was around 4.31 frames per second, while in the hardware implementation we have 520.04 frames per second on average.
+When we measure the framerate of both implementations using the same images as the base dataset we found an improvement 365% in the frameRate, on the software implementation the value of the frameRate was around 4.31 frames per second, while in the hardware implementation we have 20.04 frames per second on average.
 
 > :ToCPrevNext
