@@ -8,7 +8,6 @@ function setup() {
 
 function draw() {
   if (capture) {
-    console.log(frameRate())
 
     image(capture, 0, 0, 320, 240);
     button.hide();
