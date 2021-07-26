@@ -65,7 +65,6 @@ function draw() {
       }
     }
     video.updatePixels();
-
   } 
 }
 
