@@ -145,6 +145,10 @@ Now you can try these filters with your own camera.
 
 
 > :P5 sketch=/docs/sketches/ascii_art_own_hardware.js, width=393, height=393
+## Comparison with Software implementation
+
+When we measure the framerate of both implementations we found an improvement 448% in the frameRate, on the software implementation the value of the frameRate was around 8.28 frames per second, while in the hardware implementation we have 45.45 frames per second on average. Additionally the lag on the software implementation video is evident and detectable for the human sight, while in the hardware implementation the fluency is evident.
+ 
 
 
 > :ToCPrevNext

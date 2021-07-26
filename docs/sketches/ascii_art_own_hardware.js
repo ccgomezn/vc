@@ -40,7 +40,6 @@ function draw() {
       texture(shaderTexture);
       shaderTexture.rect(0,0,393,393);
       rect(-393/2.0,-393.0/2.0,393,393)
-    
 
   } else {
     button.position(180, 300);

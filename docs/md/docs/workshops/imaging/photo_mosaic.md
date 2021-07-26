@@ -125,3 +125,5 @@ function draw() {
 }
 
 ```
+
+> :P5 sketch=/docs/sketches/mosaic_own.js, width=640, height=480
