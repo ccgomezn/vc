@@ -117,6 +117,6 @@ function draw() {
     texture(shaderTexture);
     shaderTexture.rect(0,0,256,256);
     rect(-1000  /2.0,-240.0,640,480)
- 
+  console.log(frameRate())
     
 }
