@@ -73,8 +73,8 @@ function setup() {
   }
 
 
-  w = img.width / scl;
-  h = img.height / scl;
+  w = 640 / scl;
+  h = 480 / scl;
   
 
 
