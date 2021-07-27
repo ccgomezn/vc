@@ -25,7 +25,7 @@ Here you can see the filter applied to an image, and check how the edge detectio
 > > :Tab title=P5 Code
 > >
 > > 
-> > ```js | gray_color_shader.js
+> > ```js | kernel.js
 > > let convShader;
 > > let shaderTexture;
 > > let kernel = [];
@@ -89,6 +89,29 @@ Here you can see the filter applied to an image, and check how the edge detectio
 > > precision mediump float;
 > > #endif
 > > 
+> > attribute vec3 aPosition;
+> > attribute vec2 aTexCoord;
+> > 
+> > varying vec2 vTexCoord;
+> > 
+> > void main() {
+> >   vTexCoord = aTexCoord;
+> > 
+> >   vec4 positionVec4 = vec4(aPosition, 1.0);
+> >   positionVec4.xy = positionVec4.xy * 2.0 - 1.0;
+> > 
+> >   gl_Position = positionVec4;
+> > }
+> > ```
+>
+> > :Tab title=Fragment Shader Code
+> >
+> > 
+> > ```glsl | kernel.frag
+> > #ifdef GL_ES
+> > precision mediump float;
+> > #endif
+> > 
 > > varying vec2 vTexCoord;
 > > uniform int n;
 > > uniform float kernel[49];
@@ -113,34 +136,6 @@ Here you can see the filter applied to an image, and check how the edge detectio
 > >   }
 > > 		
 > > 	gl_FragColor = vec4(conv.rgb, 1.0);
-> > }
-> > ```
->
-> > :Tab title=Fragment Shader Code
-> >
-> > 
-> > ```glsl | gray_rgb.frag
-> > #ifdef GL_ES
-> > precision mediump float;
-> > #endif
-> > 
-> > varying vec2 vTexCoord;
-> > 
-> > uniform sampler2D tex;
-> > 
-> > float rgb(vec3 color) {
-> >   return dot(color, vec3(1.0/3.0, 1.0/3.0, 1.0/3.0));
-> > }
-> > 
-> > void main() {
-> >   vec2 uv = vTexCoord;
-> >   uv.y = 1.0 - uv.y;
-> > 
-> >   vec4 tex_f = texture2D(tex, uv);
-> > 
-> >   float gray = rgb(tex_f.rgb);
-> > 
-> >   gl_FragColor = vec4(gray,gray,gray,1.0);
 > > }
 > > ```
 
